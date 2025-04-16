@@ -101,16 +101,11 @@ console.log(teachersString)
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 
-let Empty
+const isTeachersEmpty = null; // stringa non necessaria
 
 if (teachers.length === 0){
-  Empty = 'Non è una string'
-  // console.log('Non è una string')
+  console.log('Non è una string')
 } else {
-  Empty = 'È una stringa'
-  // console.log('è una stringa')
+  console.log('è una stringa')
 }
 
-const isTeachersEmpty = Empty
-
-console.log(isTeachersEmpty);
