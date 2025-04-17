@@ -60,23 +60,23 @@ console.log(teachers);
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
+console.log("È presente Fabio?")
+
 /* const isFabioPresent = teachers.some(checkName);
                          function checkName(name) {
                            return name === "Fabio"
  }; */
 
-let isFabioPresent
-
+let isFabioFind
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i] === "Fabio"){
-    isFabioPresent = true;
+    isFabioFind = true;
     } 
 }
-console.log(isFabioPresent);
+console.log(`Prova con ciclo for: ${isFabioFind}`); //
 
-// const isFabioPresent = teachers.includes('Fabio');
-// console.log("È presente Fabio?")
-// console.log(isFabioPresent);
+const isFabioPresent = teachers.includes('Fabio');
+console.log(`Prova con ciclo for: ${isFabioPresent}`);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
