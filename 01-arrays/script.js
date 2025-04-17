@@ -63,21 +63,20 @@ console.log(teachers);
 /* const isFabioPresent = teachers.some(checkName);
                          function checkName(name) {
                            return name === "Fabio"
- }; /*
+ }; */
 
-/* let isFabioPresent 
+let isFabioPresent
+
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i] === "Fabio"){
     isFabioPresent = true;
-    } else {
-      isFabioPresent = false;
-    }
+    } 
 }
-console.log(isFabioPresent);*/
-
-const isFabioPresent = teachers.includes('Fabio');
-console.log("È presente Fabio?")
 console.log(isFabioPresent);
+
+// const isFabioPresent = teachers.includes('Fabio');
+// console.log("È presente Fabio?")
+// console.log(isFabioPresent);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
@@ -95,13 +94,17 @@ console.log(lewisIndex);
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
 
-const teachersString = teachers.toString();
+// const teachersString = teachers.toString();
+const teachersString = teachers.join(" - ");
 console.log(teachersString)
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 
-const isTeachersEmpty = null; // stringa non necessaria
+// const isTeachersEmpty = null; 
+
+const isTeachersEmpty = teachers.length === 0;
+console.log(isTeachersEmpty) // metodo giusto
 
 if (teachers.length === 0){
   console.log('Non è una string')

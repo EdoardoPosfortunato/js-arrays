@@ -32,7 +32,7 @@ console.table(longNames)
 
 console.warn('Eliminiamo Ed')
 
-teachers.splice(teachers.indexOf('Ed'), 1)
+teachers.splice(teachers.indexOf('Ed'), 1) 
 console.table(teachers)
 
 //Inserisci un nume da eliminare dalla lista
